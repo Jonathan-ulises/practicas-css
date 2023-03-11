@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* PseudoClases. Se aplica :: */
+        span::before {
+            content: '-';
+            font-size: 30px;
+        }
+
+        span::after {
+            content: 'Hola, texto generado';
+            color: blue;
+        }
+
+        /* Editar texto */
+        p::first-letter {
+            font-size: 45px;
+        }
+
+        p::first-line {
+            color: red;
+        }
+
+        /* Listas */
+        ul li::marker {
+            color: violet;
+        }
+
+        /* Placeholder */
+        input::placeholder {
+            color: red;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum consequuntur nostrum in natus saepe doloribus non earum, magnam laboriosam pariatur quasi a, maxime error et dolore. Sint ex temporibus et!</p>
+
+    <ul>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+   </ul>
+
+
+   <input type="text" placeholder="Escribe tu nombre">
+</body>
+</html>
